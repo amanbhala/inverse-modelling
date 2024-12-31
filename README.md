@@ -26,6 +26,7 @@ z_im = np.imag(aiimodel.microstructure_list[1]['ectScan']['zl']).flatten()
 ```
 
 # IPython Notebook
+The entire notebook contains extensive comments which can help in understanding what different lines of the code is doing.
 In the `inverse_modelling.ipynb` file, there are three different examples of inverse model runs:
 - Trying to learn only `eta` keeping all other parameters fixed
 - Trying to learn all the four parameters together
@@ -57,3 +58,7 @@ If you want to learn some other combination of parameters, then follow the below
   # model.add(eta_kappa_function(eta,kappa))
   ```
   or you can create your own priors and mention them here.
+
+# Some formulaes
+- `mul` is calculated using the following formula:
+  ![mul](./images/mul.png)
