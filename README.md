@@ -6,17 +6,14 @@ To run the code, run the first 5 cells which initialises all the functions and c
 
 `z_re` and `z_im` are the real and imaginary ectScan values that will act as true data.
 User can either provide their own true data. One such example is:
-`
+```
 # True value
 z_re = np.loadtxt("new_green_subsection_real_ect_values.csv", delimiter=',').flatten()
 z_im = np.loadtxt("new_green_subsection_imag_ect_values.csv", delimiter=',').flatten()
-`
-
+```
 or they can generate random microtexture and use that as true data and try to recover this data by running the inverse model. This can be done by running the following lines:
-`
-<!---
+```
 # Run the below code to generate a random microtexture
--->
 start = time.time()
 aiimodel=AII_model(0.1)
 await aiimodel.async_init()
@@ -26,4 +23,4 @@ await aiimodel.async_init()
 aiimodel.scan_operation()
 z_re = np.real(aiimodel.microstructure_list[1]['ectScan']['zl']).flatten()
 z_im = np.imag(aiimodel.microstructure_list[1]['ectScan']['zl']).flatten()
-`
+```
