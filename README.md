@@ -14,7 +14,9 @@ z_im = np.loadtxt("new_green_subsection_imag_ect_values.csv", delimiter=',').fla
 
 or they can generate random microtexture and use that as true data and try to recover this data by running the inverse model. This can be done by running the following lines:
 `
+<!---
 # Run the below code to generate a random microtexture
+-->
 start = time.time()
 aiimodel=AII_model(0.1)
 await aiimodel.async_init()
