@@ -1,8 +1,8 @@
 # Running the code
 To run the code, run the first 5 cells which initialises all the functions and classes.
-AII_model class defines the parameters for defining Bingham distribution and other parameters needed for the forward and inverse model calculations.
-scan_operation function runs the forward model and generates ectScan results for a microtexture.
-calculate_covariance_matrix function runs the inverse model to retrieve Bingham distribution(cOdf) from ectScan data.
+- `AII_model` class defines the parameters for defining Bingham distribution and other parameters needed for the forward and inverse model calculations.
+- `scan_operation` function runs the forward model and generates ectScan results for a microtexture.
+- `calculate_covariance_matrix` function runs the inverse model to retrieve Bingham distribution(cOdf) from ectScan data.
 
 `z_re` and `z_im` are the real and imaginary ectScan values that will act as true data.
 User can either provide their own true data. One such example is:
