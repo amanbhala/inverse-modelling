@@ -60,5 +60,12 @@ If you want to learn some other combination of parameters, then follow the below
   or you can create your own priors and mention them here.
 
 # Some formulaes
+- `zl` is calculated using the following formula:
+  ![mul](./images/zl.png)
 - `mul` is calculated using the following formula:
   ![mul](./images/mul.png)
+- `gamma` is calculated using the following formula:
+  ![mul](./images/gamma.png)
+- `gamma_hat` is calculated using the following formula:
+  ![mul](./images/gamma_hat.png)
+More information is provided in the paper [Inverse_problems](./Papers/Homa_2021_Inverse_Problems_37_065004%20(2).pdf)
