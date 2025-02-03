@@ -69,3 +69,12 @@ If you want to learn some other combination of parameters, then follow the below
 - `gamma_hat` is calculated using the following formula:
   ![mul](./images/gamma_hat.png)
 More information is provided in the paper [Inverse_problems](./Papers/Homa_2021_Inverse_Problems_37_065004%20(2).pdf)
+
+
+# MATLAB scripts
+- The script called `inverse_model_loading_script` can be used to generate the orientation plot and pole figure plots. It uses the MATLAB tool called mtex to generate the results. The following line plots the orientation plot or microtexture plot:
+`plot(ebsd, ebsd.orientations);` and the following line plots the pole figures: `plotPDF(ebsd.orientations,Miller(0,0,1,ebsd.CS),'points','all');` . Input to this script is a microtexture data, an example is provided in the folder named `microtexture.txt`
+
+# Data Generation
+- To generate the data for training CycleGAN, codes are provided in the folder Data Generation.
+- Function `creating_array_3bingham_distributions` is used for generating 3 codf bingham distributions and `creating_array_2bingham_distributions` is used for generating 2 codf bingham distributions. To generate newer data, run any of the above functions and then run the last cell which generates the input(microtexture data) and output(ectScan data). To run the forward model, the code also needs the two files `Exs_26_26_updated_iterations.npy` and `Eys_26_26_updated_iterations.npy` files which are provided in the same folder.
